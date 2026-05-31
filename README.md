@@ -62,8 +62,10 @@ See **[DEPLOY.md](DEPLOY.md)** — Vercel (frontend) + Render (backend), $0/mont
 
 ## Resume & learning
 
+- **[docs/STUDY_GUIDE.md](docs/STUDY_GUIDE.md)** — **start here** — features, Q&A, resources, weekly plan
+- **[docs/TECHNICAL.md](docs/TECHNICAL.md)** — full technical documentation (architecture, stack, every file)
+- **[docs/LEARNING_PATH.md](docs/LEARNING_PATH.md)** — 6-week study schedule
 - **[docs/RESUME.md](docs/RESUME.md)** — resume bullets and interview pitch
-- **[docs/LEARNING_PATH.md](docs/LEARNING_PATH.md)** — 6-week study plan
 
 ## Project structure
 

@@ -32,19 +32,34 @@ git push -u origin main
 
 ## Step 2 — Deploy backend on Render (free)
 
+### Important — correct Render settings
+
+If Docker build fails, **double-check these exactly**:
+
+| Setting | Value |
+|---------|-------|
+| **Root Directory** | *(leave blank — repo root)* |
+| **Runtime** | **Docker** |
+| **Dockerfile Path** | `backend/Dockerfile` |
+| **Docker Build Context Directory** | `backend` |
+
+**Common mistake:** Setting Root Directory to `backend` **and** Dockerfile Path to `backend/Dockerfile` — that breaks the build. Use one or the other:
+- **Option A (recommended):** Root blank + Dockerfile `backend/Dockerfile` + Context `backend`
+- **Option B:** Root `backend` + Dockerfile `Dockerfile` + Context `.`
+
+Also fix GitHub access if you see *"we don't have access to your repo"*:
+1. Render Dashboard → **Account Settings** → **GitHub** → configure access
+2. Ensure **GreenSwitch** repo is allowed
+3. Retry deploy
+
+---
+
 1. Go to [render.com](https://render.com) → sign up (GitHub login works).
 2. Click **New +** → **Web Service**.
 3. Connect your **GreenSwitch** GitHub repo.
-4. Settings:
-   | Setting | Value |
-   |---------|-------|
-   | Name | `greenswitch-api` |
-   | Root Directory | *(leave blank)* |
-   | Runtime | **Docker** |
-   | Dockerfile Path | `./backend/Dockerfile` |
-   | Docker Context | `./backend` |
-   | Plan | **Free** |
-5. **Environment variables** (Environment tab):
+4. Use the settings table above.
+5. Plan: **Free**
+6. **Environment variables** (Environment tab):
 
    | Key | Value |
    |-----|-------|
@@ -102,10 +117,27 @@ git push -u origin main
 
 | Problem | Fix |
 |---------|-----|
+| Build failed / Exited status 1 | Check Dockerfile path + context (see Step 2 table). Push latest code. Use **Manual Deploy → Clear build cache & deploy** |
+| "Don't have access to your repo" | Render → GitHub settings → grant access to **GreenSwitch** |
+| Build OK but service crashes | App must use `$PORT` — fixed in latest Dockerfile |
+| Health check failed | Open `/health` — ensure service is running |
 | "Failed to fetch" on live site | Check `NEXT_PUBLIC_API_URL` on Vercel matches Render URL |
 | CORS error in browser | Add your exact Vercel URL to `CORS_ORIGINS` on Render |
 | API slow first load | Normal on Render free tier (cold start) |
 | AI tips don't work | Add `GEMINI_API_KEY` on Render — optional feature |
+
+### Option B — Native Python (no Docker)
+
+If Docker keeps failing, create a new Web Service with:
+
+| Setting | Value |
+|---------|-------|
+| Root Directory | `backend` |
+| Runtime | **Python 3** |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `uvicorn app.main:app --host 0.0.0.0 --port $PORT` |
+
+Same environment variables as above.
 
 ---
 

@@ -5,10 +5,11 @@ services:
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
     plan: free
+    healthCheckPath: /health
     envVars:
       - key: GEMINI_API_KEY
         sync: false
       - key: ENVIRONMENT
         value: production
       - key: CORS_ORIGINS
-        value: https://your-frontend-url.com
+        value: https://your-frontend-url.vercel.app

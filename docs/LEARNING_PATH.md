@@ -1,4 +1,7 @@
-# Learning Path for GreenSwitch
+# GreenSwitch — Complete Study Guide
+
+> **Full guide:** See **[STUDY_GUIDE.md](./STUDY_GUIDE.md)** for features, interview Q&A, resources, and glossary.  
+> **Technical deep-dive:** See **[TECHNICAL.md](./TECHNICAL.md)** for architecture and code map.
 
 Study in this order. Each step builds on the last. **Run the app locally while you learn.**
 
