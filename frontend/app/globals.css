@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f6f9f7;
+  --foreground: #1a2e1a;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--foreground);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(34, 197, 94, 0.12), transparent),
+    linear-gradient(180deg, #f0fdf4 0%, #f6f9f7 35%, #fafafa 100%);
+  min-height: 100vh;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-white/80 bg-white/90 p-6 shadow-[0_4px_24px_-4px_rgba(22,101,52,0.08)] backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply rounded-xl bg-eco-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-eco-700 hover:shadow-md disabled:opacity-50;
+  }
+
+  .btn-ghost {
+    @apply rounded-xl border border-emerald-200/80 bg-white px-4 py-2 text-sm font-medium text-eco-700 transition hover:bg-emerald-50;
+  }
+}
