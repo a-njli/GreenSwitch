@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ecoswap-api
+    name: greenswitch-api
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend

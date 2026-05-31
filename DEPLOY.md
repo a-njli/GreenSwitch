@@ -1,4 +1,4 @@
-# Deploy EcoSwap for Free
+# Deploy GreenSwitch for Free
 
 Deploy the **frontend on Vercel** (free) and the **backend on Render** (free). Total cost: **$0**.
 
@@ -17,14 +17,14 @@ If not done yet, from the project folder:
 ```bash
 git init
 git add .
-git commit -m "EcoSwap: sustainable product swap app"
-gh repo create EcoSwap --public --source=. --remote=origin --push
+git commit -m "GreenSwitch: sustainable product swap app"
+gh repo create GreenSwitch --public --source=. --remote=origin --push
 ```
 
 Or create a repo manually at [github.com/new](https://github.com/new), then:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/EcoSwap.git
+git remote add origin https://github.com/YOUR_USERNAME/GreenSwitch.git
 git push -u origin main
 ```
 
@@ -34,11 +34,11 @@ git push -u origin main
 
 1. Go to [render.com](https://render.com) → sign up (GitHub login works).
 2. Click **New +** → **Web Service**.
-3. Connect your **EcoSwap** GitHub repo.
+3. Connect your **GreenSwitch** GitHub repo.
 4. Settings:
    | Setting | Value |
    |---------|-------|
-   | Name | `ecoswap-api` |
+   | Name | `greenswitch-api` |
    | Root Directory | *(leave blank)* |
    | Runtime | **Docker** |
    | Dockerfile Path | `./backend/Dockerfile` |
@@ -53,8 +53,8 @@ git push -u origin main
    | `CORS_ORIGINS` | `https://YOUR-APP.vercel.app` *(update after Step 3)* |
 
 6. Click **Create Web Service** — wait ~5 min for first deploy.
-7. Copy your API URL, e.g. `https://ecoswap-api.onrender.com`
-8. Test: open `https://ecoswap-api.onrender.com/health` — should show `"status":"ok"`.
+7. Copy your API URL, e.g. `https://greenswitch-api.onrender.com`
+8. Test: open `https://greenswitch-api.onrender.com/health` — should show `"status":"ok"`.
 
 > **Note:** Free Render services sleep after 15 min idle. First request after sleep takes ~30–60 seconds.
 
@@ -63,7 +63,7 @@ git push -u origin main
 ## Step 3 — Deploy frontend on Vercel (free)
 
 1. Go to [vercel.com](https://vercel.com) → sign up with GitHub.
-2. **Add New Project** → import your **EcoSwap** repo.
+2. **Add New Project** → import your **GreenSwitch** repo.
 3. Settings:
    | Setting | Value |
    |---------|-------|
@@ -75,10 +75,10 @@ git push -u origin main
 
    | Key | Value |
    |-----|-------|
-   | `NEXT_PUBLIC_API_URL` | `https://ecoswap-api.onrender.com` *(your Render URL, no trailing slash)* |
+   | `NEXT_PUBLIC_API_URL` | `https://greenswitch-api.onrender.com` *(your Render URL, no trailing slash)* |
 
 5. Click **Deploy**.
-6. Copy your Vercel URL, e.g. `https://ecoswap.vercel.app`
+6. Copy your Vercel URL, e.g. `https://greenswitch.vercel.app`
 
 ---
 
@@ -86,7 +86,7 @@ git push -u origin main
 
 1. **Render** → your API service → **Environment** → set:
    ```
-   CORS_ORIGINS=https://ecoswap.vercel.app
+   CORS_ORIGINS=https://greenswitch.vercel.app
    ```
    *(use your real Vercel URL)*
 

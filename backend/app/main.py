@@ -1,4 +1,4 @@
-"""EcoSwap API entry point."""
+"""GreenSwitch API entry point."""
 
 from datetime import datetime, timezone
 
@@ -13,7 +13,7 @@ from app.models.schemas import HealthResponse
 def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(
-        title="EcoSwap API",
+        title="GreenSwitch API",
         description="Sustainable shopping assistant — find eco-friendly product swaps",
         version="2.0.0",
     )

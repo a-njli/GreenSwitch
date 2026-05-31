@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "EcoSwap — Find Greener Everyday Products",
+  title: "GreenSwitch — Find Greener Everyday Products",
   description: "Discover eco-friendly alternatives with shop links, carbon savings, and easy comparisons",
 };
 

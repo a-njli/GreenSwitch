@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-const STORAGE_KEY = "ecoswap_favorites";
+const STORAGE_KEY = "greenswitch_favorites";
 
 export interface Favorite {
   id: string;

@@ -1,4 +1,4 @@
-# EcoSwap — Sustainable Product Swap App
+# GreenSwitch — Sustainable Product Swap App
 
 A beginner-friendly full-stack app that helps users find eco-friendly alternatives to disposable products, calculate carbon impact, and compare options side-by-side.
 
@@ -68,7 +68,7 @@ See **[DEPLOY.md](DEPLOY.md)** — Vercel (frontend) + Render (backend), $0/mont
 ## Project structure
 
 ```
-EcoSwap/
+GreenSwitch/
 ├── backend/app/
 │   ├── api/routes.py          # REST endpoints
 │   ├── data/catalog.py        # Product data
@@ -85,7 +85,7 @@ EcoSwap/
 
 ## Interview pitch
 
-> "EcoSwap is a full-stack sustainability app I built with Next.js and FastAPI. Users search for disposable products using keyword matching, browse a product catalog by category, calculate their carbon footprint, and compare eco alternatives. Favorites are saved in localStorage. I optionally integrated Gemini for personalized eco tips — one simple API call, not a complex AI pipeline."
+> "GreenSwitch is a full-stack sustainability app I built with Next.js and FastAPI. Users search for disposable products using keyword matching, browse a product catalog by category, calculate their carbon footprint, and compare eco alternatives. Favorites are saved in localStorage. I optionally integrated Gemini for personalized eco tips — one simple API call, not a complex AI pipeline."
 
 ## What I learned
 

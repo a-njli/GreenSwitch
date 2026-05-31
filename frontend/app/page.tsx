@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <div className="flex items-center gap-2">
             <span className="text-2xl">🌿</span>
-            <span className="text-xl font-bold text-eco-900">EcoSwap</span>
+            <span className="text-xl font-bold text-eco-900">GreenSwitch</span>
           </div>
           <p className="hidden text-sm text-slate-500 sm:block">Greener choices, made simple</p>
         </div>
@@ -96,7 +96,7 @@ export default function HomePage() {
       </main>
 
       <footer className="border-t border-emerald-100/40 py-8 text-center text-sm text-slate-400">
-        <p>EcoSwap — helping you make one greener choice at a time 🌱</p>
+        <p>GreenSwitch — helping you make one greener choice at a time 🌱</p>
         <p className="mt-1 text-xs">Shop links go to third-party stores. We may earn nothing — we just want you to swap smarter.</p>
       </footer>
     </div>

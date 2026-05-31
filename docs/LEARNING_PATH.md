@@ -1,4 +1,4 @@
-# Learning Path for EcoSwap
+# Learning Path for GreenSwitch
 
 Study in this order. Each step builds on the last. **Run the app locally while you learn.**
 
@@ -100,7 +100,7 @@ Study in this order. Each step builds on the last. **Run the app locally while y
 
 ## Practice interview questions
 
-1. What does EcoSwap do?
+1. What does GreenSwitch do?
 2. Why FastAPI? Why Next.js?
 3. How does search work without AI?
 4. How do shop links get to the user?

@@ -1,34 +1,37 @@
-# Push to GitHub (a-njli/EcoSwap)
+# Push GreenSwitch to GitHub
 
-Everything is committed locally. Run these commands **in your Mac Terminal** (where you're logged into GitHub):
+This is a **new project** — it will **not** replace your existing [EcoSwap](https://github.com/a-njli/EcoSwap) repo.
+
+## Step 1 — Create a new repo on GitHub
+
+1. Go to [github.com/new](https://github.com/new) while logged in as **a-njli**
+2. Repository name: **`GreenSwitch`**
+3. Description: *Find greener everyday products — swaps, shop links, carbon calculator*
+4. Public → **Create repository** (do **not** add README — we already have one)
+
+## Step 2 — Push from your Mac Terminal
 
 ```bash
 cd /Users/anjali.tiwari/Personal/EcoSwap
 
-# Confirm remote points to your account
-git remote set-url origin https://github.com/a-njli/EcoSwap.git
+git remote set-url origin https://github.com/a-njli/GreenSwitch.git
 
-# Push (replaces old EcoSwap repo with this new version)
-git push --force origin main
+git push -u origin main
 ```
 
-If GitHub asks you to sign in, use your **a-njli** account (browser or Personal Access Token).
+Sign in as **a-njli** if prompted. No `--force` needed — this is a brand-new repo.
 
-### If push is rejected without force
+## Step 3 — Verify
 
-Your repo already has old commits. The `--force` flag replaces them with this new project. That's expected.
+Open **https://github.com/a-njli/GreenSwitch** — your code should be there.
 
-### After push
+## Deploy (free)
 
-Your code will be live at: **https://github.com/a-njli/EcoSwap**
+Follow **[DEPLOY.md](DEPLOY.md)** — use service names like `greenswitch-api` on Render and `greenswitch.vercel.app` on Vercel.
 
-Then deploy free using **[DEPLOY.md](DEPLOY.md)**:
-1. **Render** → backend (`backend/Dockerfile`)
-2. **Vercel** → frontend (root: `frontend/`)
-
-### SSH alternative (if you use SSH keys)
+## SSH alternative
 
 ```bash
-git remote set-url origin git@github.com:a-njli/EcoSwap.git
-git push --force origin main
+git remote set-url origin git@github.com:a-njli/GreenSwitch.git
+git push -u origin main
 ```

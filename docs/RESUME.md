@@ -1,4 +1,4 @@
-# Resume Bullets for EcoSwap
+# Resume Bullets for GreenSwitch
 
 Copy and adapt these for your resume, LinkedIn, or portfolio.
 
@@ -6,7 +6,7 @@ Copy and adapt these for your resume, LinkedIn, or portfolio.
 
 ## Project title line
 
-**EcoSwap** — Sustainable Product Swap Web App | *Next.js, FastAPI, Python*
+**GreenSwitch** — Sustainable Product Swap Web App | *Next.js, FastAPI, Python*
 
 ---
 
@@ -26,7 +26,7 @@ Copy and adapt these for your resume, LinkedIn, or portfolio.
 
 ## One-liner for portfolio / LinkedIn
 
-> EcoSwap helps people discover greener everyday products — search what you use, see carbon savings, compare options, and shop alternatives online.
+> GreenSwitch helps people discover greener everyday products — search what you use, see carbon savings, compare options, and shop alternatives online.
 
 ---
 
@@ -44,7 +44,7 @@ Copy and adapt these for your resume, LinkedIn, or portfolio.
 
 ## Interview answer: "Tell me about this project"
 
-> "EcoSwap is a sustainability app I built to help people swap disposable products for greener alternatives. On the frontend I used Next.js with a tabbed UI — search, browse by category, carbon calculator, and compare view. The backend is FastAPI with a product catalog and a keyword-matching engine that scores swaps. Users can save favorites in localStorage and click through to shop on Amazon, Target, or eco stores. I deployed it free on Vercel and Render. I optionally integrated Gemini for one-line green living tips — a single API call, nothing complex."
+> "GreenSwitch is a sustainability app I built to help people swap disposable products for greener alternatives. On the frontend I used Next.js with a tabbed UI — search, browse by category, carbon calculator, and compare view. The backend is FastAPI with a product catalog and a keyword-matching engine that scores swaps. Users can save favorites in localStorage and click through to shop on Amazon, Target, or eco stores. I deployed it free on Vercel and Render. I optionally integrated Gemini for one-line green living tips — a single API call, nothing complex."
 
 ---
 
@@ -53,5 +53,5 @@ Copy and adapt these for your resume, LinkedIn, or portfolio.
 After deploy, add to resume:
 
 ```
-github.com/a-njli/EcoSwap  |  your-app.vercel.app
+github.com/a-njli/GreenSwitch  |  your-app.vercel.app
 ```
