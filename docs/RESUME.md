@@ -53,5 +53,5 @@ Copy and adapt these for your resume, LinkedIn, or portfolio.
 After deploy, add to resume:
 
 ```
-github.com/YOUR_USERNAME/EcoSwap  |  your-app.vercel.app
+github.com/a-njli/EcoSwap  |  your-app.vercel.app
 ```
